@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trybind.trys">
+   <children>
+      <ImageView fitHeight="633.0" fitWidth="546.0" layoutX="-84.0" layoutY="-212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="162.0" fitWidth="212.0" layoutX="-13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@correct.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="guesswhat" layoutX="65.0" layoutY="106.0" prefHeight="41.0" prefWidth="172.0" text="Guess who will win!!" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="16.0" />
+         </font></Label>
+      <Button fx:id="startBtn" layoutX="118.0" layoutY="154.0" mnemonicParsing="false" onAction="#startgame" style="-fx-background-color: #FBEBFF;" text="Listen" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff6a6a" />
+                  <Stop color="#ff6a6a" offset="0.03266331658291457" />
+                  <Stop color="#ff9602" offset="0.251103145524462" />
+                  <Stop color="#ffe251" offset="0.3716040700114569" />
+                  <Stop color="#66e307" offset="0.4729119638826185" />
+                  <Stop color="#52c5ff" offset="0.6918735891647856" />
+                  <Stop color="#52c8ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Label fx:id="required_name" layoutX="32.0" layoutY="71.0" text="Please input player name" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="required_first_no" layoutX="9.0" layoutY="105.0" text="Server decides the first number!" textAlignment="CENTER" textFill="#fffbcc" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="required_sec_no" layoutX="2.0" layoutY="105.0" text="Please input  the second number!" textAlignment="CENTER" textFill="#fffbcc" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="big_or_small" layoutX="75.0" layoutY="105.0" text="bigger or smaller?" textAlignment="CENTER" textFill="#646464" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="first_number" layoutX="73.0" layoutY="195.0" text="23" textFill="#5c5c5c" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="operator" layoutX="118.0" layoutY="192.0" text="+" textFill="#5c5c5c" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="second_number" layoutX="160.0" layoutY="195.0" text="44" textFill="#5c5c5c" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="plus_or_minus" layoutX="117.0" layoutY="104.0" text="+ or -" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="computer_flag" layoutX="252.0" layoutY="188.0" text="?" textFill="#ff521d" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="compare" layoutX="195.0" layoutY="190.0" text="&gt;or&lt;" visible="false">
+         <font>
+            <Font name="Eras Bold ITC" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#bbff00" />
+                  <Stop color="#d5fe66" offset="0.4924623115577891" />
+                  <Stop color="#52c8ff" offset="0.5100502512562815" />
+                  <Stop color="#006793" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="check" fitHeight="125.0" fitWidth="125.0" layoutX="-21.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@check.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wa" fitHeight="109.0" fitWidth="122.0" layoutX="-22.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@wa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
